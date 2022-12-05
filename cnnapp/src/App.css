@@ -1,0 +1,71 @@
+:root {
+  --simple-text: #CDD7F7;
+}
+
+.App {
+  background-color: #0A192F;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  user-select: none;
+
+  gap: 1rem;
+}
+
+.App span {
+  color: var(--simple-text);
+  font-size: 1.8rem;
+}
+
+#button-upload {
+  background-color: #172A46;
+  padding: 0.8rem 2rem;
+  color: var(--simple-text);
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+
+  cursor: pointer;
+  box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.22);
+}
+
+input {
+  display: none;
+}
+
+label {
+  color: var(--simple-text);
+  cursor: pointer;
+  /* background-color: red; */
+  padding: 0.5rem 3rem;
+  border: 2px dashed #172A46;
+}
+
+#result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background-color: var(--simple-text);
+  padding: 0.5rem 3rem;
+  border-radius: 1rem;
+}
+
+#empty-result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background-color: transparent;
+  padding: 0.5rem 3rem;
+  border-radius: 1rem;
+}
+
+#result-container p {
+  color: #172A46;
+  font-size: 2rem;
+}
